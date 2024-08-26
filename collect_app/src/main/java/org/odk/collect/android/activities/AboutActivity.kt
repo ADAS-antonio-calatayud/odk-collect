@@ -55,7 +55,6 @@ class AboutActivity : LocalizedActivity(), AboutItemClickListener {
         }
 
         websiteUri = Uri.parse(getString(org.odk.collect.strings.R.string.app_url))
-        forumUri = Uri.parse(getString(org.odk.collect.strings.R.string.forum_url))
     }
 
     private fun initToolbar() {

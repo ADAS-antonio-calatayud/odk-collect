@@ -100,15 +100,11 @@ class FirstLaunchActivity : LocalizedActivity() {
 
             dontHaveServer.apply {
                 text = SpannableStringBuilder()
-                    .append(getString(org.odk.collect.strings.R.string.dont_have_project))
+                    .append(getString(org.odk.collect.strings.R.string.odk_give_credict))
                     .append(" ")
                     .color(getThemeAttributeValue(context, com.google.android.material.R.attr.colorAccent)) {
-                        append(getString(org.odk.collect.strings.R.string.try_demo))
+                        append(getString(org.odk.collect.strings.R.string.odk_url))
                     }
-
-                setOnClickListener {
-                    viewModel.tryDemo()
-                }
             }
         }
     }
